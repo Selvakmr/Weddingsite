@@ -35,9 +35,56 @@
               font-weight: bold;
               font-style: normal;
         }
+        .butterfly {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url("https://media.tenor.com/KQcO2HLenHgAAAAj/butterfly-orange.gif") no-repeat;
+            background-size: contain;
+            animation: fly 5s infinite linear;
+        }
+        .butterflys {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url("https://media.tenor.com/-V7JcKnxE_gAAAAi/butterfly-green.gif") no-repeat;
+            background-size: contain;
+            animation: fly 5s infinite linear;
+        }
+        
+        .butterfly-1 {
+            top: 50%;
+            left: -100px;
+            animation-duration: 8s;
+        }
+
+        .butterfly-2 {
+            top: 60%;
+            left: -100px;
+            animation-duration: 10s;
+        }
+        @keyframes fly {
+            0% {
+                transform: translateX(-100px) translateY(0);
+            }
+            25% {
+                transform: translateX(25vw) translateY(-50px) rotate(10deg);
+            }
+            50% {
+                transform: translateX(50vw) translateY(50px) rotate(-10deg);
+            }
+            75% {
+                transform: translateX(75vw) translateY(-50px) rotate(10deg);
+            }
+            100% {
+                transform: translateX(100vw) translateY(0) rotate(-10deg);
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="butterfly butterfly-1"></div>
+    <div class="butterflys butterfly-2"></div>
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="invite-container">
             <div class="col-12 ">
